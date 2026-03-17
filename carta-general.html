@@ -6,7 +6,7 @@
     <title>Carta General - Alérgenos</title>
     <style>
         /* ============================================================
-           ESTILOS - No tocar a menos que se quiera cambiar el diseño
+           ESTILOS (Sin JavaScript)
            ============================================================ */
         :root {
             --primary: #2c3e50;
@@ -175,15 +175,403 @@
 
     <header>
         <h1>📋 Carta del Restaurante</h1>
-        <div class="subtitulo" id="nombre-restaurante"></div>
+        <div class="subtitulo">RESTAURANTE LA CHARLOTTE</div>
         <div class="subtitulo" style="margin-top:8px; font-size:0.8em;">Infórmenos de sus alergias antes de pedir</div>
     </header>
 
-    <div id="contenido-carta"></div>
+    <div id="contenido-carta">
+        
+        <div class="categoria">🍢 Raciones</div>
+        
+        <div class="subcategoria">Del mar</div>
+        
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Gambas al ajillo</span>
+                <span class="plato-precio">12,00 €</span>
+            </div>
+            <div class="plato-descripcion">Con aceite de oliva virgen extra y guindilla</div>
+            <div class="alergenos">
+                <span class="tag tag-crustaceos" title="Crustáceos">🦐 Crustáceos</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Calamares a la romana</span>
+                <span class="plato-precio">9,50 €</span>
+            </div>
+            <div class="plato-descripcion">Con mahonesa de limón</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+                <span class="tag tag-moluscos" title="Moluscos">🦑 Moluscos</span>
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Pulpo a la gallega</span>
+                <span class="plato-precio">14,00 €</span>
+            </div>
+            <div class="plato-descripcion">Sobre cama de patata cocida con pimentón y aceite</div>
+            <div class="alergenos">
+                <span class="tag tag-moluscos" title="Moluscos">🦑 Moluscos</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Pimientos del piquillo rellenos de bacalao</span>
+                <span class="plato-precio">10,50 €</span>
+            </div>
+            <div class="plato-descripcion">Con crema de piquillos</div>
+            <div class="alergenos">
+                <span class="tag tag-pescado" title="Pescado">🐟 Pescado</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Ensaladilla rusa de la casa</span>
+                <span class="plato-precio">7,00 €</span>
+            </div>
+            <div class="plato-descripcion">Con mayonesa casera, atún y palitos de cangrejo</div>
+            <div class="alergenos">
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+                <span class="tag tag-pescado" title="Pescado">🐟 Pescado</span>
+                <span class="tag tag-crustaceos" title="Crustáceos">🦐 Crustáceos</span>
+            </div>
+        </div>
+
+        <div class="subcategoria">De la tierra</div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Chorizo a la sidra</span>
+                <span class="plato-precio">8,50 €</span>
+            </div>
+            <div class="plato-descripcion">Chorizo ibérico cocinado en sidra natural</div>
+            <div class="alergenos">
+                <span class="tag tag-sulfitos" title="Sulfitos">🍇 Sulfitos</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Pan con tomate y jamón</span>
+                <span class="plato-precio">6,50 €</span>
+            </div>
+            <div class="plato-descripcion">Pan de cristal tostado con tomate natural y jamón serrano</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Queso manchego frito</span>
+                <span class="plato-precio">8,00 €</span>
+            </div>
+            <div class="plato-descripcion">Con mermelada de tomate casera</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+            </div>
+        </div>
+
+        <div class="categoria">🍳 Platos Principales</div>
+
+        <div class="subcategoria">Carnes</div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Entrecot de ternera a la plancha</span>
+                <span class="plato-precio">18,00 €</span>
+            </div>
+            <div class="plato-descripcion">Con patatas fritas y pimientos asados. Al punto o al gusto</div>
+            <div class="alergenos">
+                <span class="tag tag-sulfitos" title="Sulfitos">🍇 Sulfitos</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Solomillo de cerdo a la pimienta</span>
+                <span class="plato-precio">15,50 €</span>
+            </div>
+            <div class="plato-descripcion">Con salsa de pimienta verde y patatas gratinadas</div>
+            <div class="alergenos">
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+                <span class="tag tag-sulfitos" title="Sulfitos">🍇 Sulfitos</span>
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Pollo asado al limón y romero</span>
+                <span class="plato-precio">12,00 €</span>
+            </div>
+            <div class="plato-descripcion">Medio pollo con patatas al horno</div>
+            <div class="alergenos">
+                <span class="sin-alergenos">✓ Sin alérgenos de declaración obligatoria</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Hamburguesa de la casa</span>
+                <span class="plato-precio">12,50 €</span>
+            </div>
+            <div class="plato-descripcion">200g de carne de ternera, queso cheddar, lechuga, tomate y cebolla caramelizada</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+                <span class="tag tag-mostaza" title="Mostaza">🟡 Mostaza</span>
+                <span class="tag tag-soja" title="Soja">🫘 Soja</span>
+            </div>
+        </div>
+
+        <div class="subcategoria">Pescados</div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Merluza al horno con verduras</span>
+                <span class="plato-precio">16,00 €</span>
+            </div>
+            <div class="plato-descripcion">Merluza fresca con patatas, cebolla y tomate</div>
+            <div class="alergenos">
+                <span class="tag tag-pescado" title="Pescado">🐟 Pescado</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Salmón a la plancha</span>
+                <span class="plato-precio">15,50 €</span>
+            </div>
+            <div class="plato-descripcion">Con salsa de eneldo, alcaparras y arroz basmati</div>
+            <div class="alergenos">
+                <span class="tag tag-pescado" title="Pescado">🐟 Pescado</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Bacalao al pil-pil</span>
+                <span class="plato-precio">16,50 €</span>
+            </div>
+            <div class="plato-descripcion">Bacalao desalado con salsa pil-pil tradicional</div>
+            <div class="alergenos">
+                <span class="tag tag-pescado" title="Pescado">🐟 Pescado</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Dorada a la sal</span>
+                <span class="plato-precio">17,00 €</span>
+            </div>
+            <div class="plato-descripcion">Dorada entera a la sal con patatas al vapor</div>
+            <div class="alergenos">
+                <span class="tag tag-pescado" title="Pescado">🐟 Pescado</span>
+            </div>
+        </div>
+
+        <div class="subcategoria">Pastas y Arroces</div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Paella de marisco</span>
+                <span class="plato-precio">28,00 € (para 2)</span>
+            </div>
+            <div class="plato-descripcion">Para 2 personas. Con gamba, mejillón, calamar y langostino</div>
+            <div class="alergenos">
+                <span class="tag tag-crustaceos" title="Crustáceos">🦐 Crustáceos</span>
+                <span class="tag tag-moluscos" title="Moluscos">🦑 Moluscos</span>
+                <span class="tag tag-pescado" title="Pescado">🐟 Pescado</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Arroz negro con sepia</span>
+                <span class="plato-precio">13,50 €</span>
+            </div>
+            <div class="plato-descripcion">Arroz con tinta de calamar, sepia y alioli</div>
+            <div class="alergenos">
+                <span class="tag tag-moluscos" title="Moluscos">🦑 Moluscos</span>
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Pasta carbonara</span>
+                <span class="plato-precio">10,00 €</span>
+            </div>
+            <div class="plato-descripcion">Spaghetti con panceta, yema de huevo y parmesano</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+            </div>
+        </div>
+
+        <div class="categoria">🥪 Bocadillos y Sandwiches</div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Bocadillo de calamares</span>
+                <span class="plato-precio">7,50 €</span>
+            </div>
+            <div class="plato-descripcion">Calamares a la romana con alioli en baguette</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+                <span class="tag tag-moluscos" title="Moluscos">🦑 Moluscos</span>
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Bocadillo de lomo</span>
+                <span class="plato-precio">6,50 €</span>
+            </div>
+            <div class="plato-descripcion">Lomo de cerdo a la plancha con pimientos verdes y tomate</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Sandwich club</span>
+                <span class="plato-precio">8,00 €</span>
+            </div>
+            <div class="plato-descripcion">Triple de pollo, bacon, lechuga, tomate, queso y mayonesa</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Sandwich vegetal</span>
+                <span class="plato-precio">7,00 €</span>
+            </div>
+            <div class="plato-descripcion">Con aguacate, tomate, lechuga, zanahoria y queso fresco</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+            </div>
+        </div>
+
+        <div class="categoria">🍮 Postres</div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Flan casero</span>
+                <span class="plato-precio">4,50 €</span>
+            </div>
+            <div class="plato-descripcion">Con nata montada y caramelo líquido</div>
+            <div class="alergenos">
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Tarta de queso al horno</span>
+                <span class="plato-precio">5,50 €</span>
+            </div>
+            <div class="plato-descripcion">Estilo vasco, con mermelada de frutos rojos</div>
+            <div class="alergenos">
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Tiramisú casero</span>
+                <span class="plato-precio">5,50 €</span>
+            </div>
+            <div class="plato-descripcion">Con bizcochos de soletilla, mascarpone y cacao</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Coulant de chocolate</span>
+                <span class="plato-precio">6,00 €</span>
+            </div>
+            <div class="plato-descripcion">Con helado de vainilla</div>
+            <div class="alergenos">
+                <span class="tag tag-gluten" title="Gluten">🌾 Gluten</span>
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+                <span class="tag tag-frutosseco" title="Frutos de cáscara">🌰 Frutos de cáscara</span>
+                <span class="tag tag-soja" title="Soja">🫘 Soja</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Fruta del tiempo</span>
+                <span class="plato-precio">3,50 €</span>
+            </div>
+            <div class="plato-descripcion">Selección de frutas de temporada</div>
+            <div class="alergenos">
+                <span class="sin-alergenos">✓ Sin alérgenos de declaración obligatoria</span>
+            </div>
+        </div>
+
+        <div class="plato">
+            <div class="plato-header">
+                <span class="plato-nombre">Helado artesano (2 bolas)</span>
+                <span class="plato-precio">4,00 €</span>
+            </div>
+            <div class="plato-descripcion">Consultar sabores del día</div>
+            <div class="alergenos">
+                <span class="tag tag-lacteos" title="Lácteos">🥛 Lácteos</span>
+                <span class="tag tag-huevo" title="Huevo">🥚 Huevo</span>
+            </div>
+        </div>
+
+    </div>
 
     <div class="leyenda-section">
         <h3>⚠️ Leyenda de alérgenos</h3>
-        <div class="leyenda-grid" id="leyenda"></div>
+        <div class="leyenda-grid">
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#c0932a"></div><span>🌾 Gluten</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#e74c3c"></div><span>🦐 Crustáceos</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#e67e22"></div><span>🥚 Huevo</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#2980b9"></div><span>🐟 Pescado</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#7d4e14"></div><span>🥜 Cacahuete</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#27ae60"></div><span>🫘 Soja</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#5dade2"></div><span>🥛 Lácteos</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#8e44ad"></div><span>🌰 Frutos de cáscara</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#1abc9c"></div><span>🥬 Apio</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#f1c40f"></div><span>🟡 Mostaza</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#d68910"></div><span>🌿 Sésamo</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#9b59b6"></div><span>🍇 Sulfitos</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#e91e63"></div><span>🌸 Altramuces</span></div>
+            <div class="leyenda-item"><div class="leyenda-dot" style="background:#6c3483"></div><span>🦑 Moluscos</span></div>
+        </div>
     </div>
 
     <footer>
@@ -193,317 +581,6 @@
     </footer>
 
 </div>
-
-<script>
-// Datos del restaurante y la carta
-const RESTAURANTE = "RESTAURANTE LA CHARLOTTE";
-
-const CARTA = {
-    categorias: [
-        {
-            nombre: "🍢 Raciones",
-            subcategorias: [
-                {
-                    nombre: "Del mar",
-                    platos: [
-                        {
-                            nombre: "Gambas al ajillo",
-                            descripcion: "Con aceite de oliva virgen extra y guindilla",
-                            precio: "12,00 €",
-                            alergenos: ["crustaceos"]
-                        },
-                        {
-                            nombre: "Calamares a la romana",
-                            descripcion: "Con mahonesa de limón",
-                            precio: "9,50 €",
-                            alergenos: ["gluten", "moluscos", "huevo"]
-                        },
-                        {
-                            nombre: "Pulpo a la gallega",
-                            descripcion: "Sobre cama de patata cocida con pimentón y aceite",
-                            precio: "14,00 €",
-                            alergenos: ["moluscos"]
-                        },
-                        {
-                            nombre: "Pimientos del piquillo rellenos de bacalao",
-                            descripcion: "Con crema de piquillos",
-                            precio: "10,50 €",
-                            alergenos: ["pescado", "lacteos"]
-                        },
-                        {
-                            nombre: "Ensaladilla rusa de la casa",
-                            descripcion: "Con mayonesa casera, atún y palitos de cangrejo",
-                            precio: "7,00 €",
-                            alergenos: ["huevo", "pescado", "crustaceos"]
-                        }
-                    ]
-                },
-                {
-                    nombre: "De la tierra",
-                    platos: [
-                        {
-                            nombre: "Chorizo a la sidra",
-                            descripcion: "Chorizo ibérico cocinado en sidra natural",
-                            precio: "8,50 €",
-                            alergenos: ["sulfitos"]
-                        },
-                        {
-                            nombre: "Pan con tomate y jamón",
-                            descripcion: "Pan de cristal tostado con tomate natural y jamón serrano",
-                            precio: "6,50 €",
-                            alergenos: ["gluten"]
-                        },
-                        {
-                            nombre: "Queso manchego frito",
-                            descripcion: "Con mermelada de tomate casera",
-                            precio: "8,00 €",
-                            alergenos: ["gluten", "lacteos", "huevo"]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            nombre: "🍳 Platos Principales",
-            subcategorias: [
-                {
-                    nombre: "Carnes",
-                    platos: [
-                        {
-                            nombre: "Entrecot de ternera a la plancha",
-                            descripcion: "Con patatas fritas y pimientos asados. Al punto o al gusto",
-                            precio: "18,00 €",
-                            alergenos: ["sulfitos"]
-                        },
-                        {
-                            nombre: "Solomillo de cerdo a la pimienta",
-                            descripcion: "Con salsa de pimienta verde y patatas gratinadas",
-                            precio: "15,50 €",
-                            alergenos: ["lacteos", "sulfitos", "gluten"]
-                        },
-                        {
-                            nombre: "Pollo asado al limón y romero",
-                            descripcion: "Medio pollo con patatas al horno",
-                            precio: "12,00 €",
-                            alergenos: []
-                        },
-                        {
-                            nombre: "Hamburguesa de la casa",
-                            descripcion: "200g de carne de ternera, queso cheddar, lechuga, tomate y cebolla caramelizada",
-                            precio: "12,50 €",
-                            alergenos: ["gluten", "lacteos", "huevo", "mostaza", "soja"]
-                        }
-                    ]
-                },
-                {
-                    nombre: "Pescados",
-                    platos: [
-                        {
-                            nombre: "Merluza al horno con verduras",
-                            descripcion: "Merluza fresca con patatas, cebolla y tomate",
-                            precio: "16,00 €",
-                            alergenos: ["pescado"]
-                        },
-                        {
-                            nombre: "Salmón a la plancha",
-                            descripcion: "Con salsa de eneldo, alcaparras y arroz basmati",
-                            precio: "15,50 €",
-                            alergenos: ["pescado", "lacteos"]
-                        },
-                        {
-                            nombre: "Bacalao al pil-pil",
-                            descripcion: "Bacalao desalado con salsa pil-pil tradicional",
-                            precio: "16,50 €",
-                            alergenos: ["pescado"]
-                        },
-                        {
-                            nombre: "Dorada a la sal",
-                            descripcion: "Dorada entera a la sal con patatas al vapor",
-                            precio: "17,00 €",
-                            alergenos: ["pescado"]
-                        }
-                    ]
-                },
-                {
-                    nombre: "Pastas y Arroces",
-                    platos: [
-                        {
-                            nombre: "Paella de marisco",
-                            descripcion: "Para 2 personas. Con gamba, mejillón, calamar y langostino",
-                            precio: "28,00 € (para 2)",
-                            alergenos: ["crustaceos", "moluscos", "pescado"]
-                        },
-                        {
-                            nombre: "Arroz negro con sepia",
-                            descripcion: "Arroz con tinta de calamar, sepia y alioli",
-                            precio: "13,50 €",
-                            alergenos: ["moluscos", "huevo"]
-                        },
-                        {
-                            nombre: "Pasta carbonara",
-                            descripcion: "Spaghetti con panceta, yema de huevo y parmesano",
-                            precio: "10,00 €",
-                            alergenos: ["gluten", "huevo", "lacteos"]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            nombre: "🥪 Bocadillos y Sandwiches",
-            platos: [
-                {
-                    nombre: "Bocadillo de calamares",
-                    descripcion: "Calamares a la romana con alioli en baguette",
-                    precio: "7,50 €",
-                    alergenos: ["gluten", "moluscos", "huevo"]
-                },
-                {
-                    nombre: "Bocadillo de lomo",
-                    descripcion: "Lomo de cerdo a la plancha con pimientos verdes y tomate",
-                    precio: "6,50 €",
-                    alergenos: ["gluten"]
-                },
-                {
-                    nombre: "Sandwich club",
-                    descripcion: "Triple de pollo, bacon, lechuga, tomate, queso y mayonesa",
-                    precio: "8,00 €",
-                    alergenos: ["gluten", "huevo", "lacteos"]
-                },
-                {
-                    nombre: "Sandwich vegetal",
-                    descripcion: "Con aguacate, tomate, lechuga, zanahoria y queso fresco",
-                    precio: "7,00 €",
-                    alergenos: ["gluten", "lacteos"]
-                }
-            ]
-        },
-        {
-            nombre: "🍮 Postres",
-            platos: [
-                {
-                    nombre: "Flan casero",
-                    descripcion: "Con nata montada y caramelo líquido",
-                    precio: "4,50 €",
-                    alergenos: ["huevo", "lacteos"]
-                },
-                {
-                    nombre: "Tarta de queso al horno",
-                    descripcion: "Estilo vasco, con mermelada de frutos rojos",
-                    precio: "5,50 €",
-                    alergenos: ["huevo", "lacteos", "gluten"]
-                },
-                {
-                    nombre: "Tiramisú casero",
-                    descripcion: "Con bizcochos de soletilla, mascarpone y cacao",
-                    precio: "5,50 €",
-                    alergenos: ["gluten", "huevo", "lacteos"]
-                },
-                {
-                    nombre: "Coulant de chocolate",
-                    descripcion: "Con helado de vainilla",
-                    precio: "6,00 €",
-                    alergenos: ["gluten", "huevo", "lacteos", "frutosseco", "soja"]
-                },
-                {
-                    nombre: "Fruta del tiempo",
-                    descripcion: "Selección de frutas de temporada",
-                    precio: "3,50 €",
-                    alergenos: []
-                },
-                {
-                    nombre: "Helado artesano (2 bolas)",
-                    descripcion: "Consultar sabores del día",
-                    precio: "4,00 €",
-                    alergenos: ["lacteos", "huevo"]
-                }
-            ]
-        }
-    ]
-};
-
-const ALERGENOS_INFO = {
-    gluten:      { emoji: "🌾", nombre: "Gluten",            clase: "tag-gluten",     color: "#c0932a" },
-    crustaceos:  { emoji: "🦐", nombre: "Crustáceos",        clase: "tag-crustaceos", color: "#e74c3c" },
-    huevo:       { emoji: "🥚", nombre: "Huevo",             clase: "tag-huevo",      color: "#e67e22" },
-    pescado:     { emoji: "🐟", nombre: "Pescado",           clase: "tag-pescado",    color: "#2980b9" },
-    cacahuete:   { emoji: "🥜", nombre: "Cacahuete",         clase: "tag-cacahuete",  color: "#7d4e14" },
-    soja:        { emoji: "🫘", nombre: "Soja",              clase: "tag-soja",       color: "#27ae60" },
-    lacteos:     { emoji: "🥛", nombre: "Lácteos",           clase: "tag-lacteos",    color: "#5dade2" },
-    frutosseco:  { emoji: "🌰", nombre: "Frutos de cáscara", clase: "tag-frutosseco", color: "#8e44ad" },
-    apio:        { emoji: "🥬", nombre: "Apio",              clase: "tag-apio",       color: "#1abc9c" },
-    mostaza:     { emoji: "🟡", nombre: "Mostaza",           clase: "tag-mostaza",    color: "#f1c40f" },
-    sesamo:      { emoji: "🌿", nombre: "Sésamo",            clase: "tag-sesamo",     color: "#d68910" },
-    sulfitos:    { emoji: "🍇", nombre: "Sulfitos",          clase: "tag-sulfitos",   color: "#9b59b6" },
-    altramuces:  { emoji: "🌸", nombre: "Altramuces",        clase: "tag-altramuces", color: "#e91e63" },
-    moluscos:    { emoji: "🦑", nombre: "Moluscos",          clase: "tag-moluscos",   color: "#6c3483" }
-};
-
-// Lógica de renderizado simplificada al máximo
-document.getElementById('nombre-restaurante').textContent = RESTAURANTE;
-
-let htmlCarta = '';
-
-CARTA.categorias.forEach(cat => {
-    htmlCarta += `<div class="categoria">${cat.nombre}</div>`;
-    
-    if (cat.platos) {
-        cat.platos.forEach(plato => {
-            htmlCarta += generarHtmlPlato(plato);
-        });
-    } else if (cat.subcategorias) {
-        cat.subcategorias.forEach(sub => {
-            htmlCarta += `<div class="subcategoria">${sub.nombre}</div>`;
-            sub.platos.forEach(plato => {
-                htmlCarta += generarHtmlPlato(plato);
-            });
-        });
-    }
-});
-
-document.getElementById('contenido-carta').innerHTML = htmlCarta;
-
-function generarHtmlPlato(plato) {
-    let htmlAlergenos = '';
-    if (!plato.alergenos || plato.alergenos.length === 0) {
-        htmlAlergenos = '<span class="sin-alergenos">✓ Sin alérgenos de declaración obligatoria</span>';
-    } else {
-        htmlAlergenos = plato.alergenos.map(a => {
-            const info = ALERGENOS_INFO[a];
-            return info 
-                ? `<span class="tag ${info.clase}" title="${info.nombre}">${info.emoji} ${info.nombre}</span>` 
-                : `<span class="tag" style="background:#999">${a}</span>`;
-        }).join('');
-    }
-
-    let htmlPrecio = plato.precio ? `<span class="plato-precio">${plato.precio}</span>` : '';
-    let htmlDescripcion = plato.descripcion ? `<div class="plato-descripcion">${plato.descripcion}</div>` : '';
-
-    return `
-        <div class="plato">
-            <div class="plato-header">
-                <span class="plato-nombre">${plato.nombre}</span>
-                ${htmlPrecio}
-            </div>
-            ${htmlDescripcion}
-            <div class="alergenos">${htmlAlergenos}</div>
-        </div>
-    `;
-}
-
-// Pintar la leyenda
-let htmlLeyenda = '';
-Object.values(ALERGENOS_INFO).forEach(info => {
-    htmlLeyenda += `
-        <div class="leyenda-item">
-            <div class="leyenda-dot" style="background:${info.color}"></div>
-            <span>${info.emoji} ${info.nombre}</span>
-        </div>
-    `;
-});
-document.getElementById('leyenda').innerHTML = htmlLeyenda;
-
-</script>
 
 </body>
 </html>
