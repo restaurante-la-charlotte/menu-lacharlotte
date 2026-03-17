@@ -109,7 +109,7 @@
         }
         .sin-alergenos { font-size: 0.8em; color: #27ae60; font-style: italic; }
 
-        /* Colores por alérgeno (14 alérgenos europeos) */
+        /* Colores por alérgeno */
         .tag-gluten      { background: #c0932a; }
         .tag-crustaceos  { background: #e74c3c; }
         .tag-huevo       { background: #e67e22; }
@@ -193,8 +193,42 @@
 </head>
 <body>
 
-<script id="datos-carta">
+<div class="container">
+
+    <div class="nav-carta">
+        <a href="menu-diario.html">📅 Ver Menú del Día</a>
+    </div>
+
+    <header>
+        <h1>📋 Carta del Restaurante</h1>
+        <div class="subtitulo" id="nombre-restaurante"></div>
+        <div class="subtitulo" style="margin-top:8px; font-size:0.8em;">Infórmenos de sus alergias antes de pedir</div>
+    </header>
+
+    <div class="buscador-wrap">
+        <input type="text" id="busqueda" placeholder="🔍 Buscar plato (ej: salmón, croquetas, sin gluten...)">
+    </div>
+
+    <div id="contenido-carta"></div>
+    <div class="sin-resultados" id="sin-resultados">No se encontraron platos con ese término</div>
+
+    <div class="leyenda-section">
+        <h3>⚠️ Leyenda de alérgenos</h3>
+        <div class="leyenda-grid" id="leyenda"></div>
+    </div>
+
+    <footer>
+        <p>Si tiene alguna alergia o intolerancia alimentaria, consúltenos antes de pedir.</p>
+        <p style="margin-top:6px;">Podemos tener trazas de otros alérgenos no indicados en esta carta.</p>
+        <p style="margin-top:10px;"><a href="menu-diario.html">Ver menú del día →</a></p>
+    </footer>
+
+</div>
+
+<script>
+// Todo el código agrupado en una sola etiqueta <script> para evitar errores de carga
 const RESTAURANTE = "RESTAURANTE LA CHARLOTTE";
+
 const CARTA = {
     categorias: [
         {
@@ -465,41 +499,7 @@ const CARTA = {
         }
     ]
 };
-</script>
 
-<div class="container">
-
-    <div class="nav-carta">
-        <a href="menu-diario.html">📅 Ver Menú del Día</a>
-    </div>
-
-    <header>
-        <h1>📋 Carta del Restaurante</h1>
-        <div class="subtitulo" id="nombre-restaurante"></div>
-        <div class="subtitulo" style="margin-top:8px; font-size:0.8em;">Infórmenos de sus alergias antes de pedir</div>
-    </header>
-
-    <div class="buscador-wrap">
-        <input type="text" id="busqueda" placeholder="🔍 Buscar plato (ej: salmón, croquetas, sin gluten...)">
-    </div>
-
-    <div id="contenido-carta"></div>
-    <div class="sin-resultados" id="sin-resultados">No se encontraron platos con ese término</div>
-
-    <div class="leyenda-section">
-        <h3>⚠️ Leyenda de alérgenos</h3>
-        <div class="leyenda-grid" id="leyenda"></div>
-    </div>
-
-    <footer>
-        <p>Si tiene alguna alergia o intolerancia alimentaria, consúltenos antes de pedir.</p>
-        <p style="margin-top:6px;">Podemos tener trazas de otros alérgenos no indicados en esta carta.</p>
-        <p style="margin-top:10px;"><a href="menu-diario.html">Ver menú del día →</a></p>
-    </footer>
-
-</div>
-
-<script>
 const ALERGENOS_INFO = {
     gluten:      { emoji: "🌾", nombre: "Gluten",            clase: "tag-gluten",     color: "#c0932a" },
     crustaceos:  { emoji: "🦐", nombre: "Crustáceos",        clase: "tag-crustaceos", color: "#e74c3c" },
@@ -551,57 +551,4 @@ CARTA.categorias.forEach(cat => {
     divCat.innerHTML = `<div class="categoria">${cat.nombre}</div>`;
 
     if (cat.platos) {
-        divCat.innerHTML += cat.platos.map(renderPlato).join('');
-    } else if (cat.subcategorias) {
-        cat.subcategorias.forEach(sub => {
-            divCat.innerHTML += `<div class="subcategoria">${sub.nombre}</div>`;
-            divCat.innerHTML += sub.platos.map(renderPlato).join('');
-        });
-    }
-    contenedor.appendChild(divCat);
-});
-
-// Leyenda completa
-const leyendaDiv = document.getElementById('leyenda');
-Object.entries(ALERGENOS_INFO).forEach(([key, info]) => {
-    const item = document.createElement('div');
-    item.className = 'leyenda-item';
-    item.innerHTML = `
-        <div class="leyenda-dot" style="background:${info.color}"></div>
-        <span>${info.emoji} ${info.nombre}</span>
-    `;
-    leyendaDiv.appendChild(item);
-});
-
-// Buscador
-document.getElementById('busqueda').addEventListener('input', function() {
-    const filtro = this.value.toLowerCase().trim();
-    const platos = document.querySelectorAll('.plato');
-    let encontrados = 0;
-
-    platos.forEach(p => {
-        const visible = !filtro || p.dataset.search.includes(filtro)
-            || p.innerHTML.toLowerCase().includes(filtro);
-        p.style.display = visible ? '' : 'none';
-        if (visible) encontrados++;
-    });
-
-    // Ocultar categorías vacías
-    document.querySelectorAll('.categoria, .subcategoria').forEach(el => {
-        const siguiente = el.nextElementSibling;
-        // buscar si hay algún plato visible en el grupo
-        let ref = el.nextElementSibling;
-        let tieneVisible = false;
-        while (ref && !ref.classList.contains('categoria')) {
-            if (ref.classList.contains('plato') && ref.style.display !== 'none') tieneVisible = true;
-            ref = ref.nextElementSibling;
-        }
-        el.style.display = (filtro && !tieneVisible) ? 'none' : '';
-    });
-
-    document.getElementById('sin-resultados').style.display = (filtro && encontrados === 0) ? 'block' : 'none';
-});
-</script>
-
-</body>
-</html>
+        divCat.innerHTML
